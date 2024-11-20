@@ -1,5 +1,5 @@
 {
-  "name": "unicode-text-converter",
+  "name": "yay-text",
   "version": "1.0.0",
   "description": "A tool for converting text into various Unicode variant forms",
   "main": "dist/index.js",
