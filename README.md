@@ -5,13 +5,13 @@ Convert regular text into various Unicode variant forms.
 ## Installation
 
 ```bash
-npm install unicode-text-converter
+npm install yay-text
 ```
 
 ## Quick Start
 
 ```typescript
-import {convertToUnicode, UnicodeStyle} from 'unicode-text-converter';
+import {convertToUnicode, UnicodeStyle} from 'yay-text';
 // Basic conversion
 const text = convertToUnicode('Hello', UnicodeStyle.MATH_BOLD);
 console.log(text); // 𝐇𝐞𝐥𝐥𝐨
@@ -38,7 +38,7 @@ console.log(convertToUnicode('Hello', UnicodeStyle.SANS_SERIF_BOLD)); // 𝗛�
 ## Error Handling
 
 ```typescript
-import {convertToUnicode, UnicodeStyle, UnicodeConversionError} from 'unicode-text-converter';
+import {convertToUnicode, UnicodeStyle, UnicodeConversionError} from 'yay-text';
 
 try {
     const text = convertToUnicode('Hello', 'INVALID_STYLE' as UnicodeStyle);
@@ -52,7 +52,7 @@ try {
 ## Advanced Usage
 
 ```typescript
-import {UnicodeConverter} from 'unicode-text-converter';
+import {UnicodeConverter} from 'yay-text';
 // Get all supported styles
 const styles = UnicodeConverter.getSupportedStyles();
 // Get supported characters
@@ -71,4 +71,6 @@ Note: Unsupported characters (spaces, punctuation, etc.) remain unchanged.
 
 MIT
 
-## test workflow 1.0
+## Live Demo
+
+Check out [YayText](https://yaytext.app/) - a website that uses this package to generate fancy Unicode text styles for social media and other purposes.
