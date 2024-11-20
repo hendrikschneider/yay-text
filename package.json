@@ -1,7 +1,7 @@
 {
   "name": "unicode-text-converter",
   "version": "1.0.0",
-  "description": "将普通文本转换为各种 Unicode 变体形式的工具包",
+  "description": "A tool for converting text into various Unicode variant forms",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -19,8 +19,8 @@
     "text",
     "converter",
     "transformation",
-    "字体转换",
-    "unicode变体"
+    "font converter",
+    "unicode variants"
   ],
   "author": "Your Name",
   "license": "MIT",

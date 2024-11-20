@@ -4,7 +4,7 @@ import { UNICODE_MAPS, SUPPORTED_CHARS } from './constants';
 export class UnicodeConverter {
   public static convert(text: string, style: UnicodeStyle): string {
     if (!Object.values(UnicodeStyle).includes(style)) {
-      throw new UnicodeConversionError(`不支持的样式: ${style}`);
+      throw new UnicodeConversionError(`Unsupported style: ${style}`);
     }
 
     if (style === UnicodeStyle.NORMAL) {
@@ -14,7 +14,7 @@ export class UnicodeConverter {
     const styleMap = UNICODE_MAPS[style];
     return Array.from(text).map(char => {
       if (!SUPPORTED_CHARS.includes(char)) {
-        return char; // 不支持的字符保持原样
+        return char; // Keep unsupported characters unchanged
       }
       return styleMap[char] || char;
     }).join('');
