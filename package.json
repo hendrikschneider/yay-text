@@ -40,12 +40,15 @@
     "LICENSE",
     "README.md"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/unicode-text-converter.git"
+    "url": "git+https://github.com/free-game-hub/yay-text.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/unicode-text-converter/issues"
+    "url": "https://github.com/free-game-hub/yay-text/issues"
   },
-  "homepage": "https://github.com/yourusername/unicode-text-converter#readme"
+  "homepage": "https://github.com/free-game-hub/yay-text#readme"
 } 
