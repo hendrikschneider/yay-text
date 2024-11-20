@@ -40,9 +40,6 @@
     "LICENSE",
     "README.md"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/free-game-hub/yay-text.git"
