@@ -20,9 +20,16 @@ export class UnicodeConverter {
           UnicodeToUTF8Map[unicodeChar] = normalChar;
         }
       }
+      console.log("UnicodeToUTF8Map", UnicodeToUTF8Map);
 
       const decodedText = Array.from(text)
-        .map((char) => UnicodeToUTF8Map[char] || char)
+        .map((char) => {
+          const mapped = UnicodeToUTF8Map[char];
+          if (mapped) {
+            console.log(`Decoded '${char}' -> '${mapped}'`);
+          }
+          return mapped || char;
+        })
         .join("");
 
       return decodedText;
