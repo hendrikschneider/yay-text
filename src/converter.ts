@@ -22,12 +22,7 @@ export class UnicodeConverter {
       }
 
       const decodedText = Array.from(text)
-        .map((char) => {
-          if (!SUPPORTED_CHARS.includes(char)) {
-            return char; // Keep unsupported characters unchanged
-          }
-          return UnicodeToUTF8Map[char] || char;
-        })
+        .map((char) => UnicodeToUTF8Map[char] || char)
         .join("");
 
       return decodedText;
