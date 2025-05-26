@@ -653,4 +653,4 @@ export const UNICODE_MAPS: StyleMap = {
 };
 
 export const SUPPORTED_CHARS =
-  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789äöüÄÖÜ+-=.";
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789äöüÄÖÜ";
